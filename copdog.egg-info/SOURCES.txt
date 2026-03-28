@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+copdog.egg-info/PKG-INFO
+copdog.egg-info/SOURCES.txt
+copdog.egg-info/dependency_links.txt
+copdog.egg-info/requires.txt
+copdog.egg-info/top_level.txt
