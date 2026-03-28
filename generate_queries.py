@@ -7,60 +7,105 @@ LOCATIONS = [
     "Valencia",
 ]
 
+# --- Reservation & appointment-based small businesses ---
 BUSINESS_TERMS = [
-    
-    # Marketing & digital
 
-    "marketing digital",
-    "agencia de publicidad",
-    "diseño web",
-    "SEO consultoría",
-    "community manager",
-    "agencia de comunicación",
-
-    # Business & consulting
-    
-    "consultoría empresarial",
-    "asesoría fiscal",
-    "asesoría laboral",
-    "gestoría",
-    "despacho de abogados",
-    "arquitecto",
-
-    # Health
-    
+    # Health & wellness (appointment-driven)
     "clínica dental",
-    "clínica médica",
     "fisioterapia",
     "psicólogo",
     "clínica estética",
-    "veterinario",
-    "óptica",
+    "centro de masajes",
+    "osteopatía",
+    "nutricionista",
+    "podólogo",
+    "logopeda",
+    "acupuntura",
 
-    # Education & training
-    
-    "academia de idiomas",
-    "autoescuela",
-    "centro de formación",
+    # Beauty & personal care
+    "peluquería",
+    "barbería",
+    "centro de uñas",
+    "salón de belleza",
+    "depilación láser",
+    "microblading",
 
-    # Retail & services
-    
-    "inmobiliaria",
-    "empresa de reformas",
-    "fontanero",
-    "electricista",
-    "empresa de limpieza",
-    "catering",
-    "floristería",
-    "fotografía profesional",
+    # Fitness & sports
+    "entrenador personal",
+    "academia de baile",
+    "pilates",
+    "yoga",
+    "crossfit",
+    "artes marciales",
 
-    # Hospitality
-    
+    # Hospitality & food (reservation-based)
     "restaurante",
-    "hotel boutique",
-    "cafetería",
+    "restaurante de cocina mediterránea",
+    "asador",
+    "marisquería",
+    "restaurante arrocería",
+
+    # Education & tutoring
+    "academia de idiomas",
+    "clases particulares",
+    "academia de música",
+    "autoescuela",
+
+    # Repair & home services (appointment-based)
+    "taller mecánico",
+    "servicio técnico electrodomésticos",
+    "empresa de reformas",
 
 ]
+
+# --- Original general business terms (kept for reference) ---
+# BUSINESS_TERMS = [
+#
+#     # Marketing & digital
+#     "marketing digital",
+#     "agencia de publicidad",
+#     "diseño web",
+#     "SEO consultoría",
+#     "community manager",
+#     "agencia de comunicación",
+#
+#     # Business & consulting
+#     "consultoría empresarial",
+#     "asesoría fiscal",
+#     "asesoría laboral",
+#     "gestoría",
+#     "despacho de abogados",
+#     "arquitecto",
+#
+#     # Health
+#     "clínica dental",
+#     "clínica médica",
+#     "fisioterapia",
+#     "psicólogo",
+#     "clínica estética",
+#     "veterinario",
+#     "óptica",
+#
+#     # Education & training
+#     "academia de idiomas",
+#     "autoescuela",
+#     "centro de formación",
+#
+#     # Retail & services
+#     "inmobiliaria",
+#     "empresa de reformas",
+#     "fontanero",
+#     "electricista",
+#     "empresa de limpieza",
+#     "catering",
+#     "floristería",
+#     "fotografía profesional",
+#
+#     # Hospitality
+#     "restaurante",
+#     "hotel boutique",
+#     "cafetería",
+# ]
 
 def generate_queries(business_terms, locations):
 

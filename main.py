@@ -7,7 +7,7 @@ from scraper.scrapeSources import scrape_url
 from scraper.util.statusMessage import print_log_msg, MsgType
 from scraper.util.summarize import summarize
 
-MAX_QUERIES = 10
+MAX_QUERIES = 34
 
 def get_random_query(filepath, max = 10):
 
