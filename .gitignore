@@ -1,0 +1,33 @@
+# Virtual environment
+business_scraper/
+venv/
+.venv/
+env/
+
+# Query generator (write your own — see README)
+generate_queries.py
+
+# Output data
+scraper/otp/result.json
+scraper/otp/summarize.json
+
+# Queries (generated at runtime)
+queries/queries.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+
+# Playwright browsers
+/ms-playwright/
+
+# Misc
+.env
+*.log
+.DS_Store
+minikube-linux-amd64
+CLAUDE.md

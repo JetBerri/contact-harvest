@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Always activate the venv before running anything:
 ```bash
-source business-scraper-venv/bin/activate
+source business_scraper/bin/activate
 ```
 
 ## Common commands
