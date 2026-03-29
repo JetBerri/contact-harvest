@@ -10,6 +10,7 @@ dependencies = [
     "requests",
     "rich",
     "playwright",
+    "aiohttp",
 ]
 
 [tool.setuptools.packages.find]

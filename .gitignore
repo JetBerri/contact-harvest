@@ -4,9 +4,6 @@ venv/
 .venv/
 env/
 
-# Query generator (write your own — see README)
-generate_queries.py
-
 # Output data
 scraper/otp/result.json
 scraper/otp/summarize.json

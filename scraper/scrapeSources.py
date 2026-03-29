@@ -1,6 +1,7 @@
 import re
 import asyncio
 import aiohttp
+from urllib.parse import urlparse
 
 from scraper.util.statusMessage import print_log_msg, MsgType
 
@@ -57,10 +58,16 @@ async def _scrape_single(session, url, depth):
 
     if depth < MAX_DEPTH:
 
+        base_domain = urlparse(url).netloc.lstrip("www.")
+
         hrefs = re.findall(r'href="(https?://[^"]+)"', body)
-    
-        internal_url_list = list(dict.fromkeys(hrefs))  # deduplicate preserving order
-    
+
+        internal_url_list = list(dict.fromkeys([
+            href for href in hrefs
+            if urlparse(href).netloc.lstrip("www.") == base_domain
+            and not re.search(r'\.(png|jpg|jpeg|gif|svg|webp|pdf|zip|js|css|xml|woff2?|ttf|eot|ico)(\?.*)?$', href, re.IGNORECASE)
+        ]))
+
         data["internal"] = await scrape_url(internal_url_list, depth=depth + 1)
 
     else:

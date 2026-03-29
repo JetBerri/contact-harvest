@@ -73,7 +73,7 @@ python3 -m venv business_scraper
 source business_scraper/bin/activate
 
 # Install dependencies
-pip install requests rich playwright aiohttp
+pip install .
 
 # Install Chromium for Playwright
 playwright install chromium

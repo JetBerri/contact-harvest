@@ -45,15 +45,15 @@ async def get_urls(query = "example"):
         "apple.com", "maps.google",
     )
 
-    url_list = [
+    url_list = list(dict.fromkeys([
 
         href for href in hrefs
-        
+
         if href and href.startswith("http")
-        
+
         and not any(d in href for d in excluded)
-    
-    ]
+
+    ]))
 
     print_log_msg(MsgType.SUCCESS, f"Found {len(url_list)} URLs")
 
